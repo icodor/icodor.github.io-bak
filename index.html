@@ -1,7 +1,522 @@
+
+<!DOCTYPE html>
+<script>var __pbpa = true;</script><script>var translated_warning_string = 'Warning: Never enter your Tumblr password unless \u201chttps://www.tumblr.com/login\u201d\x0ais the address in your web browser.\x0a\x0aYou should also see a green \u201cTumblr, Inc.\u201d identification in the address bar.\x0a\x0aSpammers and other bad guys use fake forms to steal passwords.\x0a\x0aTumblr will never ask you to log in from a user\u2019s blog.\x0a\x0aAre you absolutely sure you want to continue?';</script><script type="text/javascript" language="javascript" src="http://assets.tumblr.com/assets/scripts/pre_tumblelog.js?_v=66ac555bc5745ebe20abdae7cbc40704"></script>
+<!--
+ 
+      Theme: EvilQueen v0.1
+      Author: Kevin  [http://imkevin.me]
+      For: Tumblr  [http://tumblr.com/]
+      Terms: Protected under Creative Commons.
+  
+-->
+
 <!DOCTYPE html>
 <html>
-  <body>
-<h1>Welcome!</h1>
-<p>I'm hosted with GitHub Pages.</p>
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# blog: http://ogp.me/ns/blog#">
+  <title>KEVIN BLOG</title>
+  <meta charset="utf-8">
+  <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  <link rel="shortcut icon" href="http://24.media.tumblr.com/avatar_f8112b6823f2_128.png">
+  <link rel="alternate" type="application/rss+xml" href="http://imkevin.me/rss">
+  <meta name='text:Disqus Shortname' content='' />
+  
+            <meta name="description" content="iOS7 beta2 体验 With iPad 半夜在我饿得要死之时，突然看到twitter上有人大喊，beta2..." />
+  
+  <style type="text/css">
+      @import url(http://fonts.googleapis.com/css?family=Vollkorn);
+      html, body, div, span, applet, object, iframe,
+      h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+      a, abbr, acronym, address, big, cite, code,
+      del, dfn, em, img, ins, kbd, q, s, samp,
+      small, strike, strong, sub, sup, tt, var,
+      b, u, i, center,
+      dl, dt, dd, ol, ul, li,
+      fieldset, form, label, legend,
+      table, caption, tbody, tfoot, thead, tr, th, td,
+      article, aside, canvas, details, embed, 
+      figure, figcaption, footer, header, hgroup, 
+      menu, nav, output, ruby, section, summary,
+      time, mark, audio, video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        vertical-align: baseline;
+      }
+
+      body {
+        font-family: 'Vollkorn', serif;
+      }
+
+      a{
+        text-decoration: none;
+        color: #257976;
+      }
+
+      .article-title a{
+        color: black;
+      }
+
+      .article-title a:hover{
+        color: #257976;
+      }
+
+
+      .footer{
+        height: 100px;
+        line-height: 100px;
+        text-align: center;
+        background: rgba(30, 30, 30, 1.0);
+        color: white;
+        font-size: 15px;
+         position: relative;
+        z-index:3;
+      }
+      .bg-conatiner , .bg-conatiner.effect{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 550px;
+        background-image:url(http://farm3.staticflickr.com/2824/9620939021_1ffb3c95be_h.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        z-index: 1;
+      }
+
+      .bg-conatiner.effect{
+      z-index: 2;
+      opacity: 0;
+      -webkit-filter: blur(30px);
+      -moz-filter : blur(30px);
+      -ms-filter : blur(30px);
+      filter: blur(30px);
+      }
+
+      .navigation{
+        text-align:right;
+        line-height: 50px;
+        position: relative;
+        width: 70%;
+        z-index:3;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      .navigation a{
+        margin: 30px;
+      }
+
+      .articles-container {
+        position: relative;
+        z-index: 3;
+        width: 100%;
+        background: white;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: transparent;
+      }
+
+      .articles-container .header {
+        position: relative;
+        height: 550px;
+        width: 100%;
+        background-color: transparent;
+        background-repeat: no-repeat;
+        background-position: center center;
+      }
+
+      .articles-container .header .blog-title {
+        position: relative;
+        text-align: center;
+        font-size: 50px;
+        padding-top: 190px;
+        color: white;
+        text-shadow: 1px 1px 0px rgba(50, 50, 50, 0.3)
+      }
+
+      .articles-container .header .blog-desc {
+        text-align: center;
+        margin-top: 10px;
+        font-size: 25px;
+        color: white;
+        text-shadow: 1px 1px 0px rgba(50, 50, 50, 0.3)
+      }
+
+      .articles-container .articles-list {
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        padding-top: 30px;
+        background-color: white;
+      }
+
+      .articles-container .articles-list  .article{
+        position:relative;
+        width: 70%;
+        z-index: 100;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      .articles-container .articles-list  .article .article-created-at{
+        margin-bottom: 20px;
+        font-size: 15px;
+        font-weight: normal;
+        color: rgb(151, 156, 159);
+        margin-top: 30px;
+
+      }
+
+      .articles-container .articles-list  .article .article-title{
+        font-size: 35px;
+        margin-bottom: 20px;
+        color: rgb(27, 30, 35);
+        font-weight: bold;
+
+      }
+
+      .articles-container .articles-list  .article .article-content{
+        font-size: 15px;
+        line-height: 33px;
+        word-spacing:5px;
+        margin-bottom: 20px;
+        margin-top: 60px;
+      }
+
+      .articles-container .articles-list  .article .article-content img{
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+
+      .articles-container .articles-list  .article .article-footer{
+        border-top: 1px solid #eee;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        border-bottom: 1px solid #eee;
+        margin-bottom: 30px;
+        height: 110px;
+      }
+
+      .articles-container .articles-list  .article .article-footer .article-writer{
+        width: 70%;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      .articles-container .articles-list  .article .article-footer .article-writer .article-writer-avatar{
+        width: 100px;
+        height: 100px;
+        float: left;
+      }
+
+      .articles-container .articles-list  .article .article-footer .article-writer .article-writer-avatar img{
+        width: 100%;
+        height: auto;
+      }
+
+      .articles-container .articles-list  .article .article-footer .article-writer .article-writer-contacts{
+        float: left;
+        margin-left: 30px;
+      }
+
+      .articles-container .articles-list  .article .article-footer .article-writer .article-writer-contacts p {
+        font-size: 13px;
+        margin-bottom: 10px;
+        margin-top:0;
+      }
+
+      .articles-container .articles-list  .article .article-footer .article-writer  .article-writer-desc{
+        float: left;
+        margin-left: 100px;
+        line-height: 25px;
+        width: 280px;
+        font-size: 12px;
+        color: rgb(151, 156, 159);
+      }
+
+
+      .articles-container .articles-list  .article .article-footer .article-writer .article-writer-name{
+        margin-top: 10px;
+        margin-bottom: 15px;
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+  </style>
+
+
+<!-- BEGIN TUMBLR FACEBOOK OPENGRAPH TAGS --><!-- If you'd like to specify your own Open Graph tags, define the og:url and og:title tags in your theme's HTML. --><!-- Read more: http://ogp.me/ --><meta property="fb:app_id" content="48119224995" /><meta property="og:site_name" content="" /><meta property="og:title" content="iOS7 beta2 体验 With iPad" /><meta property="og:url" content="http://imkevin.me/post/53774832589/ios7-beta2-with-ipad" /><meta property="og:description" content="半夜在我饿得要死之时，突然看到twitter上有人大喊，beta2..." /><meta property="og:determiner" content="a" /><meta property="og:type" content="tumblr-feed:entry" /><meta property="og:image" content="http://media.tumblr.com/08679a63013f9c67663b99af71f60701/tumblr_inline_mowuiq7IDF1qz4rgp.png" /><meta property="og:image" content="http://media.tumblr.com/308b60295277d3b943f8f9bd183d4e45/tumblr_inline_mowuj8aCEV1qz4rgp.png" /><meta property="og:image" content="http://media.tumblr.com/309f5f07f6b42be08b4c01b618a58164/tumblr_inline_mowujsnFNA1qz4rgp.png" /><meta property="og:image" content="http://media.tumblr.com/3360d39ab3f9dc3ac952f2eb4e627827/tumblr_inline_mowukbcF011qz4rgp.png" /><meta property="og:image" content="http://media.tumblr.com/bc8afa33b0e4a61e4d79e986514ca2d6/tumblr_inline_mowukzpmSH1qz4rgp.png" /><meta property="og:image" content="http://media.tumblr.com/4ff9f51394dfda0600672a7ce94e3ae8/tumblr_inline_mowulk99aw1qz4rgp.png" /><meta property="og:image" content="http://media.tumblr.com/50d95cb2df8475b432278f071d4564e9/tumblr_inline_mowumvhi5H1qz4rgp.png" /><meta property="og:image" content="http://media.tumblr.com/8511e9995de871c94366894b343a9280/tumblr_inline_mowungsMa41qz4rgp.png" /><!-- END TUMBLR FACEBOOK OPENGRAPH TAGS -->
+
+
+<!-- TWITTER TAGS --><meta charset="utf-8"><meta name="twitter:card" content="summary" /><meta name="twitter:description" content="半夜在我饿得要死之时，突然看到twitter上有人大喊，beta2 out！
+ 于是立刻爬起来，更新之。
+ 
+
+ beta2更新过后
+ 1.中文翻译全面了
+ 显而易见的是解锁界面已经不会有英文乱入了，其他组件也完善了中文翻译
+ 2.日历图标
+ 日历图标变成了全黑色的，不知道是否会动态变化，待明天观察
+ 
+
+ 3.蹦出来个语音备忘录
+ 新UI
+ 
+
+ 4.对iOS6的App支持的提升
+ 修复了很多6中自定义界面的bug，闪退现象明显减少，以前我打不开的google+也终于可以打开了
+ 5.系统流畅性和稳定性提升
+ 多任务切换终于无尿点了，打开程序的时候也不会错位了
+ 6.系统布局细节的调整
+ 目测有通知栏Section bar的高度，音乐界面中文下的布局调整
+ 另外来自其他 App 的未读通知也会出现在未读通知里了
+ 下面说说在iPad的样子
+ 整体上来说iPad并没有带给我什么惊喜
+ 
+
+ 来看一下日历应用，最近我用这个比较多
+ 
+
+ 感觉还OK
+ 通知栏
+ 
+
+ 地图
+ 
+
+ 提醒事项
+ 
+
+ 还是这个感觉，并没有什么惊喜
+ 从目前来看，UI的设计几乎不会变了，但是很多细节透露着违和感，比如提醒事项里的材质话背景和玻璃的搭配
+ 希望这些地方随着时间可以快快改掉。
+ beta2算是一个对beta1的修修补补，没有什么引人注目的变化。
+ 继续期待beta3了。。" /><meta name="twitter:title" content="iOS7 beta2 体验 With iPad" /><meta name="twitter:url" content="http://imkevin.me/post/53774832589/ios7-beta2-with-ipad" /><meta name="twitter:site" content="tumblr" /><meta name="twitter:creator" content="kevinzhow" /><meta name="twitter:app:name:iphone" content="Tumblr" /><meta name="twitter:app:name:ipad" content="Tumblr" /><meta name="twitter:app:name:googleplay" content="Tumblr" /><meta name="twitter:app:id:iphone" content="305343404" /><meta name="twitter:app:id:ipad" content="305343404" /><meta name="twitter:app:id:googleplay" content="com.tumblr" /><meta name="twitter:app:url:iphone" content="tumblr://x-callback-url/blog?blogName=kevinzhow&amp;postID=53774832589&amp;referrer=twitter-cards" /><meta name="twitter:app:url:ipad" content="tumblr://x-callback-url/blog?blogName=kevinzhow&amp;postID=53774832589&amp;referrer=twitter-cards" /><meta name="twitter:app:url:googleplay" content="tumblr://x-callback-url/blog?blogName=kevinzhow&amp;postID=53774832589&amp;referrer=twitter-cards" />
+
+<script src="http://assets.tumblr.com/assets/scripts/tumblelog.js?_v=a9e2d0b0ade5958a1a2a936adf448061"></script>
+<meta http-equiv="x-dns-prefetch-control" content="off"/>
+<meta name="keywords" content="ios7" />
+</head>
+<body>
+  <div class="container">
+    <div class="bg-conatiner" id="bg-conatiner"></div>
+    <div class="bg-conatiner effect" id="bg-conatiner-effect"></div>
+    <div class="articles-container">
+      <div class="header">
+        <div class="blog-title">KEVIN BLOG</div>
+        
+            <div class="blog-desc">HERE IS WHERE THE FUTURE</div>
+        
+        
+      </div>
+
+      <div class="articles-list">
+      
+                
+                    <div class="article">
+                    
+                    <div class="article-created-at"><a href="http://imkevin.me/post/53774832589/ios7-beta2-with-ipad" title="Tuesday, 25 June 2013, 2:46:00"><i class="fa fa-clock-o"></i> 6 months ago </a></div>
+                    
+                      
+                      
+                            <div class="article-title"><a href="http://imkevin.me/post/53774832589/ios7-beta2-with-ipad">iOS7 beta2 体验 With iPad</a></div>
+                      
+                      <div class="article-content">
+                          <p>半夜在我饿得要死之时，突然看到twitter上有人大喊，beta2 out！</p>
+<p>于是立刻爬起来，更新之。</p>
+<p><img alt="image" src="http://media.tumblr.com/08679a63013f9c67663b99af71f60701/tumblr_inline_mowuiq7IDF1qz4rgp.png"/></p>
+
+<p>beta2更新过后</p>
+<p><strong>1.中文翻译全面了</strong></p>
+<p>显而易见的是解锁界面已经不会有英文乱入了，其他组件也完善了中文翻译</p>
+<p><strong>2.日历图标</strong></p>
+<p>日历图标变成了全黑色的，不知道是否会动态变化，待明天观察</p>
+<p><img alt="image" src="http://media.tumblr.com/308b60295277d3b943f8f9bd183d4e45/tumblr_inline_mowuj8aCEV1qz4rgp.png"/></p>
+
+<p><strong>3.蹦出来个语音备忘录</strong></p>
+<p>新UI</p>
+<p><img alt="image" src="http://media.tumblr.com/309f5f07f6b42be08b4c01b618a58164/tumblr_inline_mowujsnFNA1qz4rgp.png"/></p>
+
+<p><strong>4.对iOS6的App支持的提升</strong></p>
+<p>修复了很多6中自定义界面的bug，闪退现象明显减少，以前我打不开的google+也终于可以打开了</p>
+<p><strong>5.系统流畅性和稳定性提升</strong></p>
+<p>多任务切换终于无尿点了，打开程序的时候也不会错位了</p>
+<p><strong>6.系统布局细节的调整</strong></p>
+<p>目测有通知栏Section bar的高度，音乐界面中文下的布局调整</p>
+<p>另外来自其他 App 的未读通知也会出现在未读通知里了</p>
+<p>下面说说在iPad的样子</p>
+<p>整体上来说iPad并没有带给我什么惊喜</p>
+<p><img alt="image" src="http://media.tumblr.com/3360d39ab3f9dc3ac952f2eb4e627827/tumblr_inline_mowukbcF011qz4rgp.png"/></p>
+
+<p>来看一下日历应用，最近我用这个比较多</p>
+<p><img alt="image" src="http://media.tumblr.com/bc8afa33b0e4a61e4d79e986514ca2d6/tumblr_inline_mowukzpmSH1qz4rgp.png"/></p>
+
+<p>感觉还OK</p>
+<p>通知栏</p>
+<p><img alt="image" src="http://media.tumblr.com/4ff9f51394dfda0600672a7ce94e3ae8/tumblr_inline_mowulk99aw1qz4rgp.png"/></p>
+
+<p>地图</p>
+<p><img alt="image" src="http://media.tumblr.com/50d95cb2df8475b432278f071d4564e9/tumblr_inline_mowumvhi5H1qz4rgp.png"/></p>
+
+<p>提醒事项</p>
+<p><img alt="image" src="http://media.tumblr.com/8511e9995de871c94366894b343a9280/tumblr_inline_mowungsMa41qz4rgp.png"/></p>
+
+<p>还是这个感觉，并没有什么惊喜</p>
+<p>从目前来看，UI的设计几乎不会变了，但是很多细节透露着违和感，比如提醒事项里的材质话背景和玻璃的搭配</p>
+<p>希望这些地方随着时间可以快快改掉。</p>
+<p>beta2算是一个对beta1的修修补补，没有什么引人注目的变化。</p>
+<p>继续期待beta3了。。</p>    
+                      </div>
+                      
+                      
+                            
+                            <div class="article-footer">
+                                   <div class="article-writer">
+
+                                    <div class="article-writer-avatar">
+                                      <img src="http://24.media.tumblr.com/avatar_f8112b6823f2_128.png">
+                                    </div>
+
+                                    <div class="article-writer-contacts">
+                                      <div class="article-writer-name">
+                                      kevinzhow
+                                      </div>
+                                      <p><a href="http://twitter.com/kevinzhow">@kevinzhow</a></p>
+                                      <p><a href="http://twitter.com/imkevin.me">imkevin.me</a></p>
+                                    </div>
+
+                                    <div class="article-writer-desc">
+                                      <p>Founder of Piner intersted in iOS & Rails & Mac & Linux & Cook & Drawing & Piano</p>
+                                    </div>
+
+                                  </div>
+
+                            </div>
+
+
+                            
+
+                              <div id="disqus_thread"></div>
+                              <script type="text/javascript">
+                                  /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+                                  var disqus_shortname = 'kevinzhow'; // Required - Replace <example> with your forum shortname
+
+                                  /* * * DON'T EDIT BELOW THIS LINE * * */
+                                  (function() {
+                                      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                                      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                                      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                                  })();
+                              </script>
+                              <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                              <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+                              
+                          
+                    
+
+                    </div>
+                
+
+                
+
+                
+
+      
+
+          <div class="navigation">
+            
+
+            
+          </div>
+
+      </div>
+
+
+
+    </div>
+
+    <div class="footer">
+      DESIGN & CODE BY KEVIN
+    </div>
+  </div>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      var eTop = $('.articles-container').offset().top; //get the offset top of the element
+
+      $(window).scroll(function() { //when window is scrolled
+         var offset = eTop  - $(window).scrollTop();
+         var opacity = 1 - ( -offset / 557);
+         if (opacity >= 0) {
+           $("#bg-conatiner").css('opacity', opacity);
+           $("#bg-conatiner-effect").css('opacity', (1- opacity) * 3.5);
+         };
+
+         if (opacity >= 1) {
+          $("#bg-conatiner").css('transform', 'scale('+1 * opacity+', '+1 * opacity+')');
+          $("#bg-conatiner").css('-ms-transform', 'scale('+1 * opacity+', '+1 * opacity+')');
+          $("#bg-conatiner").css('-webkit-transform', 'scale('+1 * opacity+', '+1 * opacity+')');
+         };
+
+      });
+    });
+  </script>
+  <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-23794148-1']);
+  _gaq.push(['_setDomainName', 'imkevin.me']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<!-- BEGIN TUMBLR CODE --><iframe id="tumblr_controls" width="1" height="1" frameborder="0" scrolling="no" style="position:absolute; z-index:2147483647; top:0; right:0; border:0; background-color:transparent; overflow:hidden; " src="http://assets.tumblr.com/assets/html/iframe/o.html?_v=70f29796421d17cd4105a2fd4959ca37#src=http%3A%2F%2Fimkevin.me%2Fpost%2F53774832589%2Fios7-beta2-with-ipad&amp;pid=53774832589&amp;rk=9Ulgcw3A&amp;lang=en_US&amp;name=kevinzhow&amp;avatar=http%3A%2F%2F24.media.tumblr.com%2Favatar_f8112b6823f2_64.png&amp;title=KEVIN+BLOG&amp;url=http%3A%2F%2Fimkevin.me%2F&amp;page_slide=slide"></iframe><div id="teaser_iframe_container" style="display:none;"><iframe scrolling="no" frameborder="0" src="http://www.tumblr.com/assets/html/iframe/teaser.html?_v=013f356a51305c3778e68e78fd1b1646#src=http%3A%2F%2Fimkevin.me%2Fpost%2F53774832589%2Fios7-beta2-with-ipad&amp;pid=53774832589&amp;rk=9Ulgcw3A&amp;lang=en_US&amp;name=kevinzhow&amp;avatar=http%3A%2F%2F24.media.tumblr.com%2Favatar_f8112b6823f2_64.png&amp;title=KEVIN+BLOG&amp;url=http%3A%2F%2Fimkevin.me%2F&amp;page_slide=slide" id="teaser_iframe" width="1" height="1"></iframe></div><script type="text/javascript">
+    (function(Tumblr){
+        var follow_iframe_initialized = false;
+        if (Tumblr.FollowTeaser && Tumblr.PostMessageListener) {
+            // Don't do anything until the first initialize event
+            Tumblr.PostMessageListener.initialize(function(message, origin) {
+                if (follow_iframe_initialized || message.length < 2) return;
+
+                if (message[0] === 'follow_iframe' && message[1] === 'enable') {
+                    Tumblr.FollowTeaser.current_page = 1;
+                    Tumblr.FollowTeaser.infer_infinite_scroll = true;
+                    Tumblr.FollowTeaser.create_from_tumblr_controls("http:\/\/assets.tumblr.com\/assets\/html\/iframe\/follow.html?_v=dd369aa2f9b950d97c48ef0947afb3e3");
+                    Tumblr.FollowTeaser.scroll_listener(true);
+                    follow_iframe_initialized = true;
+                }
+            });
+        }
+    })(this.Tumblr || (this.Tumblr = {}));
+</script><!--[if IE]><script type="text/javascript">document.getElementById('tumblr_controls').allowTransparency=true;</script><![endif]--><iframe onload="javascript:this.contentWindow.postMessage(['tick_google_analytics', '/post/53774832589/ios7-beta2-with-ipad?route=%2Fpost%2F%3Aid%2F%3Asummary'].join(';'), this.src.split('/analytics.html')[0]);  COMSCORE = true;this.contentWindow.postMessage('enable_comscore;' + window.location, this.src.split('/analytics.html')[0]);" src="http://assets.tumblr.com/analytics.html?9bbb9e7732da937858cd0531689c20b1" scrolling="no" width="1" height="1" frameborder="0" style="background-color:transparent; overflow:hidden; position:absolute; top:0; left:0 z-index:9999;" id="ga_target"></iframe><script type="text/javascript">
+      var _qevents = _qevents || [];
+
+      (function() {
+       var elem = document.createElement('script');
+
+       elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";
+       elem.async = true;
+       elem.type = "text/javascript";
+       var scpt = document.getElementsByTagName('script')[0];
+       scpt.parentNode.insertBefore(elem, scpt);
+      })();
+    </script><script type="text/javascript">
+        _qevents.push( { qacct: 'p-19UtqE8ngoZbM' } );
+    </script><noscript><div style="display: none;"><img src="//pixel.quantserve.com/pixel/'p-19UtqE8ngoZbM'.gif" height="1" width="1" alt="Quantcast"/></div></noscript><script type="text/javascript">!function(s){s.src='http://www.tumblr.com/impixu?T=1389056713&J=eyJ0eXBlIjoidXJsIiwidXJsIjoiaHR0cDpcL1wvaW1rZXZpbi5tZVwvcG9zdFwvNTM3NzQ4MzI1ODlcL2lvczctYmV0YTItd2l0aC1pcGFkIiwicmVxdHlwZSI6MCwicm91dGUiOiJcL3Bvc3RcLzppZFwvOnN1bW1hcnkifQ==&U=KOKMBFFKIL&K=c37c13d47fa33f9c9ea6c42d945c25c2c69f478ae15eec11a43a79ebcdd32d8f&R='.replace(/&R=[^&$]*/,'').concat('&R='+escape(document.referrer)).slice(0,2000).replace(/%.?.?$/,'');}(new Image());</script><noscript><img style="position:absolute;z-index:-3334;top:0px;left:0px;visibility:hidden;" src="http://www.tumblr.com/impixu?T=1389056713&J=eyJ0eXBlIjoidXJsIiwidXJsIjoiaHR0cDpcL1wvaW1rZXZpbi5tZVwvcG9zdFwvNTM3NzQ4MzI1ODlcL2lvczctYmV0YTItd2l0aC1pcGFkIiwicmVxdHlwZSI6MCwicm91dGUiOiJcL3Bvc3RcLzppZFwvOnN1bW1hcnkiLCJub3NjcmlwdCI6MX0=&U=KOKMBFFKIL&K=919f17dce0a4760e45f85efbb7ca6260130ab6e760832ce208e2c25ab8edb3ba&R="></noscript><script type="text/javascript">!function(s){s.src='http://www.tumblr.com/impixu?T=1389056713&J=eyJ0eXBlIjoicG9zdCIsInVybCI6Imh0dHA6XC9cL2lta2V2aW4ubWVcL3Bvc3RcLzUzNzc0ODMyNTg5XC9pb3M3LWJldGEyLXdpdGgtaXBhZCIsInJlcXR5cGUiOjAsInJvdXRlIjoiXC9wb3N0XC86aWRcLzpzdW1tYXJ5IiwicG9zdHMiOlt7InBvc3RpZCI6IjUzNzc0ODMyNTg5IiwiYmxvZ2lkIjoiMzgxOTQwOTUiLCJzb3VyY2UiOjMzfV19&U=NFFGCCEOMF&K=d5e6210d7565934a78508944b073eb12091e05d84151d037c71bbe661d39215a&R='.replace(/&R=[^&$]*/,'').concat('&R='+escape(document.referrer)).slice(0,2000).replace(/%.?.?$/,'');}(new Image());</script><noscript><img style="position:absolute;z-index:-3334;top:0px;left:0px;visibility:hidden;" src="http://www.tumblr.com/impixu?T=1389056713&J=eyJ0eXBlIjoicG9zdCIsInVybCI6Imh0dHA6XC9cL2lta2V2aW4ubWVcL3Bvc3RcLzUzNzc0ODMyNTg5XC9pb3M3LWJldGEyLXdpdGgtaXBhZCIsInJlcXR5cGUiOjAsInJvdXRlIjoiXC9wb3N0XC86aWRcLzpzdW1tYXJ5IiwicG9zdHMiOlt7InBvc3RpZCI6IjUzNzc0ODMyNTg5IiwiYmxvZ2lkIjoiMzgxOTQwOTUiLCJzb3VyY2UiOjMzfV0sIm5vc2NyaXB0IjoxfQ==&U=NFFGCCEOMF&K=bcdcd7c4fc870892e81201c38a239482260ec21c794ccde3fa75060260d1a7fd&R="></noscript><script type="text/javascript" src="http://l.yimg.com/ss/rapid-3.9.js"></script><script>
+                    (function(YAHOO) {
+                        if (YAHOO) {
+                            YAHOO.i13n.beacon_server = 'nol.yahoo.com';
+                            var keys = { pd:'/post/:id/:summary', _li:0, i_rad:0, i_strm:0 };
+                            YAHOO.rapid = new YAHOO.i13n.Rapid({spaceid:1197719230, oo:1, client_only:1, yql_enabled:false, keys:keys});
+                        }
+                    })(window.YAHOO);
+                </script><!-- END TUMBLR CODE -->
+
 </body>
 </html>
