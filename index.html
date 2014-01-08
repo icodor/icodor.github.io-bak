@@ -1,27 +1,13 @@
 ---
-layout: nil
+layout: default
+title: Your New Jekyll Site
 ---
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
- 
-   <title>{{ site.title }}</title>
-   <link href="{{ site.url }}{{ site.feed }}" rel="self" type="application/atom+xml"/>
-   <link href="{{ site.url }}" rel="alternate" type="text/html" />
-   <updated>{{ site.time | date_to_xmlschema }}</updated>
-   <id>{{ site.url }}</id>
-   <author>
-     <name>{{ site.author.name }}</name>
-     <email>{{ site.author.email }}</email>
-   </author>
 
-   {% for post in site.posts limit:10 %}
-   <entry>
-     <title>{{ post.title }}</title>
-     <link href="http://hilojack.github.com{{ post.url }}"/>
-     <updated>{{ post.date | date_to_xmlschema }}</updated>
-     <id>http://beiyuu.com{{ post.id }}</id>
-     <content type="html">{{ post.content | xml_escape }}</content>
-   </entry>
-   {% endfor %}
- 
-</feed>
+<div id="home">
+  <h1>Blog Posts</h1>
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
