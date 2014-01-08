@@ -5,6 +5,8 @@ date:   2014-01-08 11:45:56
 categories: jekyll update
 ---
 1、申请apple ID。
+
 2、可支付美金的信用卡。
+
 [jekyll-gh]: https://github.com/mojombo/jekyll
 [jekyll]:    http://jekyllrb.com
