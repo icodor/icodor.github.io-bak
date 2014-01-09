@@ -1,0 +1,19 @@
+---
+layout: post
+title:  "iOS各种控件SIZE"
+date:   2014-01-10 00:06:56
+categories: jekyll update
+---
+Status bar height: 20
+
+Navigation bar height:44
+
+Nav bar icons:20x20
+
+Tab bar icons:30x30
+
+Tab bar height:49
+
+
+[jekyll-gh]: https://github.com/mojombo/jekyll
+[jekyll]:    http://jekyllrb.com
