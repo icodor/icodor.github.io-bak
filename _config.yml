@@ -1,3 +1,13 @@
-name: Blog Of Tiger
-markdown: redcarpet
-pygments: true
+title:            Mu-An Chiou - @muanchiou || @muan
+url:              http://muan.co
+permalink:        pretty
+pygments:         true
+markdown:         rdiscount
+rdiscount:
+  extensions:     [smart]
+google_analytics: UA-21332781-7
+timezone:         Europe/London
+paginate: 5
+gems:
+  - jemoji
+  - jekyll-mentions
