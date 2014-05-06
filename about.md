@@ -1,24 +1,17 @@
----
+﻿---
 layout: post
 title: About
 ---
 
-**Mu-An Chiou** <small>(**邱慕安**)</small>. <br />
-[Designer/Developer](https://github.com/blog/1568-mu-an-chiou-is-a-githubber) at [GitHub](https://github.com) and co-founder of [Zeczec](http://zeczec.com). 
-
-Originally from [Taipei, Taiwan](https://maps.google.com/maps?q=taipei), lived in the UK (London and Birmingham) for 5 years. Currently based nowhere.
+**Tony Yang** <small>(**老虎**)</small>. <br />
+四川人南昌上学，上海工作。
 
 <br />
 
-[GitHub](https://github.com/muan)
+[GitHub](https://github.com/icodor)
 
-[Twitter](https://twitter.com/muanchiou)
-
-[Dribbble](http://dribbble.com/muan)
-
-[Speakerdeck](http://speakerdeck.com/muan)
+[Twitter](https://twitter.com/Itigoer)
 
 [Blog feed](/feed.xml)
-
 
 <br />
