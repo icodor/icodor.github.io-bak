@@ -1,8 +1,10 @@
 ---
 layout: post
-title:  "iOS开发日志"
-date:   2014-01-11 12:19:56
-categories: jekyll update
+title: iOS开发日志
+categories:
+- Programming
+tags:
+- iOS
 ---
 #禁用textView输入
 
@@ -75,5 +77,4 @@ UITextView *textview  = [[UITextView alloc]initWithFrame:CGRectMake(0, 0, 320, 3
     return instance;
 }
 {% enhighlight %}
-[jekyll-gh]: https://github.com/mojombo/jekyll
-[jekyll]:    http://jekyllrb.com
+

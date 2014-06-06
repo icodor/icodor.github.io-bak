@@ -1,8 +1,10 @@
 ---
 layout: post
-title:  "Add Icons, Images, and Effects"
-date:   2014-01-17 10:52:56
-categories: jekyll update
+title: Add Icons,Images,and Effects
+categories:
+- Programming
+tags:
+- iOS
 ---
 #For a Mac app, create a set of icons, consisting of pairs of icons (standard and high resolution) for each icon size—16 x 16, 32 x 32, 128 x 128, 256 x 256, and 512 x 512—used by the Finder to represent your app to the user.
 Table 5-2 lists the dimensions of the icons to include for apps built for iOS 7 and later.
@@ -60,5 +62,3 @@ iPad
 100 x 100 pixels (@2x)
 This is the icon displayed in conjunction with search results on iPad.
 Note: For apps that run on devices with Retina displays, two versions of each icon should be provided, with the second one being a high-resolution version of the original. The names of the two icons should be the same except for the inclusion of the string @2x in the filename of the high-resolution image. You can find out more about specifying and loading high-resolution image resources in Drawing and Printing Guide for iOS. For a complete list of app-related icons and detailed information about the usage and preparation of your icons, see iOS Human Interface Guidelines.
-[jekyll-gh]: https://github.com/mojombo/jekyll
-[jekyll]:    http://jekyllrb.com
