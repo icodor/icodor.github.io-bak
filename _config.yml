@@ -1,13 +1,6 @@
-title:            Tony Yang - @icodor || @icodor
-url:              http://icodor.github.io
-permalink:        pretty
-pygments:         true
-markdown:         rdiscount
-rdiscount:
-  extensions:     [smart]
-google_analytics: UA-21332781-7
-timezone:         Europe/London
-paginate: 5
-gems:
-  - jemoji
-  - jekyll-mentions
+markdown: rdiscount
+permalink: /:year/:month/:title/
+url: http://icodor.github.io
+author: Tiger
+pygments: true
+paginate: 24
